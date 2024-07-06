@@ -27,10 +27,34 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: xchatty
 github_username:  simsong
 
+
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+
+lis: false
+safe: true
+highlighter: rogue
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rogue
+
+exclude:
+  - "#*"
+
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "About"
+    url: "/about/"
+  - title: "Blog"
+    url: "/blog/"
+  - title: "Contact"
+    url: "/contact/"
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.

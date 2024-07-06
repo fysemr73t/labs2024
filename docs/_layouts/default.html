@@ -4,13 +4,35 @@
   <meta charset="UTF-8">
   <title>{{ page.title }}</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
 </head>
 <body>
-  <div class="container">
-    {{ content }}
-  </div>
+  <header>
+    <nav>
+      <ul>
+        {% for item in site.navigation %}
+          <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </header>
+
+
+    <div class="container">
+        <main>
+            {{ content }}
+        </main>
+
+        <footer>
+            <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
+        </footer>
+
+    </div>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+
 </body>
 </html>
