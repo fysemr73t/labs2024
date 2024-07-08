@@ -29,7 +29,7 @@ github_username:  simsong
 
 
 # Build settings
-theme: minima
+theme: cayman
 plugins:
   - jekyll-feed
 
