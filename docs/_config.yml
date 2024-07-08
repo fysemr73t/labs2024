@@ -22,8 +22,8 @@ title: FYSMER73T / DADA-Cyber
 email: sgarfinkel@fas.harvard.edu
 description: >- # this means to ignore newlines until "baseurl:"
   Labs for Defense Against the Dark Arts (Cybersecurity Edition).
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/labs2024"                # the subpath of your site, e.g. /blog
+url: "https://fysemr73t.github.io"  # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: xchatty
 github_username:  simsong
 
