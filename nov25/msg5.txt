@@ -1,0 +1,586 @@
+Received: from DM6PR07MB7145.namprd07.prod.outlook.com (2603:10b6:5:1e1::16)
+ by BLAPR07MB7507.namprd07.prod.outlook.com with HTTPS; Sat, 8 Jun 2024
+ 05:37:24 +0000
+Received: from BN9PR03CA0648.namprd03.prod.outlook.com (2603:10b6:408:13b::23)
+ by DM6PR07MB7145.namprd07.prod.outlook.com (2603:10b6:5:1e1::16) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7633.36; Sat, 8 Jun
+ 2024 05:37:20 +0000
+Received: from BL6PEPF0001AB56.namprd02.prod.outlook.com
+ (2603:10b6:408:13b:cafe::dd) by BN9PR03CA0648.outlook.office365.com
+ (2603:10b6:408:13b::23) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7656.19 via Frontend
+ Transport; Sat, 8 Jun 2024 05:37:20 +0000
+Authentication-Results: spf=pass (sender IP is 147.253.211.216)
+ smtp.mailfrom=bounces-us.webex.com; dkim=fail (body hash did not verify)
+ header.d=webex.com;dmarc=pass action=none header.from=webex.com;compauth=pass
+ reason=100
+Received-SPF: Pass (protection.outlook.com: domain of bounces-us.webex.com
+ designates 147.253.211.216 as permitted sender)
+ receiver=protection.outlook.com; client-ip=147.253.211.216;
+ helo=mta-211-216.sparkpostmail.com; pr=E
+Received: from mx0a-00171101.pphosted.com (67.231.148.27) by
+ BL6PEPF0001AB56.mail.protection.outlook.com (10.167.241.8) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.7633.15 via Frontend Transport; Sat, 8 Jun 2024 05:37:20 +0000
+Received: from pps.filterd (m0338035.ppops.net [127.0.0.1])
+	by mx0a-00171101.pphosted.com (8.18.1.2/8.18.1.2) with ESMTP id 4585NZSH020958
+	for <sgarfinkel@fas.harvard.edu>; Sat, 8 Jun 2024 01:37:19 -0400
+Authentication-Results-Original: proofpoint.harvard.edu;	spf=pass
+ smtp.mailfrom=msprvs1=19889sm4mAF58=bounces-246854-1@bounces-us.webex.com;
+	dkim=pass header.s=scph1218 header.d=webex.com
+Received: from mta-211-216.sparkpostmail.com (mta-211-216.sparkpostmail.com [147.253.211.216])
+	by mx0a-00171101.pphosted.com (PPS) with ESMTPS id 3ym4mvv5a6-1
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128 verify=OK)
+	for <sgarfinkel@fas.harvard.edu>; Sat, 08 Jun 2024 01:37:18 -0400 (EDT)
+X-MSFBL: sAnzOuiKQZkDgfYlKnCCVRPiy2CcFuPg8y6u5mF4F0k=|eyJyIjoic2dhcmZpbmt
+	lbEBmYXMuaGFydmFyZC5lZHUiLCJ0ZW5hbnRfaWQiOiJzcGMiLCJjdXN0b21lcl9
+	pZCI6IjI0Njg1NCIsIm1lc3NhZ2VfaWQiOiI2NjYxMGVlZTYzNjZmMTdiNWZiNyI
+	sInN1YmFjY291bnRfaWQiOiIxIn0=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=webex.com;
+	s=scph1218; t=1717825038; i=@webex.com;
+	bh=7J4R4IzQQUlxpJEnxvznYVLfFyqTlpIvWi6aGXkjuHc=;
+	h=To:Message-ID:Date:Content-Type:Subject:From:List-Unsubscribe:
+	 List-Unsubscribe-Post:From:To:Cc:Subject;
+	b=ZK9Xi70isIkK3Q0DUjZdsbq9qCn+BP6xrxjQQjY4t6xCXwIY54kAeg/VparHI2/PY
+	 O1imIcEFzjRlPLylN4H76R090nTe2Hv360x/lQ+Q1xDtHY6z8q0s7y/Fnc53JOd/Vy
+	 M234+JblKJe6MZq6qlf4CJfqf783dfLM06NcszM4=
+To: sgarfinkel@fas.harvard.edu
+Message-ID: <7B.F5.06275.E0EE3666@jb.mta1vrest.cc.prd.sparkpost>
+Date: Sat, 08 Jun 2024 05:37:18 +0000
+Content-Type: multipart/alternative; boundary="_----2uv+FVXcyf8+EQKslBL72g===_BA/F5-06275-E0EE3666"
+Subject: Your Webex account has been created! Join Harvard University
+From: Cisco <webex_comm@webex.com>
+List-Unsubscribe: <mailto:unsubscribe@unsub.spmta.com?subject=unsubscribe:OI42smkKW0tNbgv2Mnh4CrNc8152lnsUWhEgVHa0aNM~|eyAicmNwdF90byI6ICJzZ2FyZmlua2VsQGZhcy5oYXJ2YXJkLmVkdSIsICJ0ZW5hbnRfaWQiOiAic3BjIiwgImN1c3RvbWVyX2lkIjogIjI0Njg1NCIsICJzdWJhY2NvdW50X2lkIjogIjEiLCAibWVzc2FnZV9pZCI6ICI2NjYxMGVlZTYzNjZmMTdiNWZiNyIgfQ~~>,<https://unsubscribe.spmta.com/u/wsWZ-4DfXNtowqlLlJL5XA~~/AAPERgA~/RgRoRnMOPFcDc3BjQgpmYQ7uY2bxe1-3UhpzZ2FyZmlua2VsQGZhcy5oYXJ2YXJkLmVkdVgEAAAAAQ~~>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+List-Id: <spc.246854.1.sparkpostmail.com>
+X-Proofpoint-GUID: BPBk7B1g01YNJC-hKkTdY4xLANZcZ4zv
+X-Proofpoint-ORIG-GUID: BPBk7B1g01YNJC-hKkTdY4xLANZcZ4zv
+X-CLX-Shades: MLX
+X-CLX-Response: 1TFkXHh0eEQpMehcZHRMRCllEF2xoRE1eQXNfaB9jEQpYWBdrAVh5SV9naUZ FUBEKeE4XYB9DY1pdaH18eEkRCkNIFwcbEhIRCkNZFwcZGBoRCkNJFxoEGhoaEQpZTRdnZnIRCl lJFx0acRgQGncGGRIecRwTHxwQGncGGBoGGhEKWV4XbGx5EQpJRhdCS1hcS1hOdUJFWV5PThEKS
+ UcXeE9NEQpDThdoemhBHWgbTRobc2RgaQdCYUF+TnMeUmZrZHBJcB5QXBEKWFwXHwQaBBkcHAUb GgQbGhoEGxkeBBkeEBseGh8aEQpeWRdOR3BhWxEKTVwXHBMSEQpMWhdpa21NTV0RCkxGF29ra2t raxEKQk8XbEwYE3BleGFbR2URCkNaFxseHQQYHxkEGBsbBBgbHBEKQl4XGxEKQkYXbF5rXFxrZH
+ NtQmIRCkJHF2dvXn8dW0l/QF1NEQpCXBcbEQpeThcbEQpCSxdgH0NjWl1ofXx4SREKQkkXYB9DY 1pdaH18eEkRCkJFF2hGRmJ/WkRSbn5oEQpCThdgH0NjWl1ofXx4SREKQkwXawFYeUlfZ2lGRVAR CkJsF2VOTF1TTl1DS1pAEQpCQBdnf2ZweEl8SUhOGBEKQlgXYhgeaXJSfkxiGFMRClpYFxsbEQp
+ 5QxdgGEgZXkRGb3NuGBEKWUsXExgeEhEKcGcXbBlOARxlbUZMS3sQGhEKcGgXYxtCZEN6WVxMem 0QHBoRCnBoF2R/Hkd5YH1uc3NsEB0aEQpwaBdsGE0BX3leUEFdZRAaEQpwaBd6X3NGb24feVocG BASHxEKcGgXZGxBWFpBUkBHfgUQHBoRCnBoF29ocmYBbGNoBVgSEBoRCnBoF2BkWVJzW3kfY3tO
+ EB0aEQpwaBdnQRp7TUVCW1xuHxAcGhEKcH0XY0JMG2kZHU18WEMQGhEKcH0XentDTmxaYkFtE0A QHRIRCnB9F2RpblkSBXkYeXJ/EBsbHxEKcH0XY0FCUHhsZGNEX24QGx8YEQpwfRdoQn9ueW9FRU FJYxATHxEKcH0XZWlrSRodGm1yUhIQGhEKcH0XYER9RkFrTHJae3wQGxgTEQpwfRdie0xtQQV6G
+ mxvXxAdEhEKcH0XZmdrGV1mYU9Bc2QQHRIRCnB9F2wSTmdvWF9wGENOEBoRCnB9F2N4QkV8b24F cGBHEB0SEQpwfRdsWh0SGkFyTGNMcBAaEQpwfxdmS39BbXhNaHlHHhAbGxgRCnBfF2l6emhjWEt pUGBpEBwaEQpwXxdjGlhiRxtERF1MGBAdEhEKcH8Xek99fFlkRWZGQ14QGxkYEQpwXxdpZ10bHl
+ kcYnoSYBAbGx8RCnBfF3p/fm14YUlzT2NEEBsfHxEKcF8XZXIFUAVfe25eUAUQEx8RCnB/F2dHe WRoGxlNUh5SEBsZExEKcF8XYkt/UxxyeHNQRnIQGhEKcF8XYER9RkFrTHJae3wQGxgTEQpwXxdu TBNuRkR/G2dnWxASHxEKcF8Xa0IaH11ifHpobh4QExoRCnBfF2gdQkNYHkAeexxeEB0SEQpwXxd
+ mGGZmRX5nYGh8axAaEQpwbBdhW2sdZVMFb3BZaxAZEhEKbX4XGhEKWE0XSxEg
+X-Proofpoint-Virus-Version: vendor=baseguard
+ engine=ICAP:2.0.293,Aquarius:18.0.1039,Hydra:6.0.680,FMLib:17.12.28.16
+ definitions=2024-06-08_02,2024-06-06_02,2024-05-17_01
+X-Proofpoint-Spam-Details: rule=notspam policy=default score=0 adultscore=0 mlxlogscore=999
+ malwarescore=0 mlxscore=0 impostorscore=0 suspectscore=0 priorityscore=379
+ spamscore=0 bulkscore=0 lowpriorityscore=0 clxscore=474 phishscore=0
+ classifier=spam adjust=0 reason=mlx scancount=1 engine=8.19.0-2405170001
+ definitions=main-2406080039 domainage_hfrom=9248
+Return-Path: msprvs1=19889sm4mAF58=bounces-246854-1@bounces-us.webex.com
+X-MS-Exchange-Organization-ExpirationStartTime: 08 Jun 2024 05:37:20.6434
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 0d6b0187-614b-4c1c-180c-08dc877d110c
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 6ffa22f4-4568-4105-ad43-2e3ad4726957:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-SkipListedInternetSender:
+ ip=[147.253.211.216];domain=mta-211-216.sparkpostmail.com
+X-MS-Exchange-ExternalOriginalInternetSender:
+ ip=[147.253.211.216];domain=mta-211-216.sparkpostmail.com
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic:
+ BL6PEPF0001AB56:EE_|DM6PR07MB7145:EE_|BLAPR07MB7507:EE_
+X-MS-Exchange-Organization-AuthSource:
+ BL6PEPF0001AB56.namprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 0d6b0187-614b-4c1c-180c-08dc877d110c
+X-MS-Exchange-AtpMessageProperties: SA
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam:
+ BCL:3;ARA:13230031|12012899003|2092899003|3092899003|3072899003|5062899003|69100299006|13102899003|13012899003|29132699018|82310400017|4123199003|5063199003|5073199003;
+X-Forefront-Antispam-Report:
+ CIP:67.231.148.27;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:NSPM;H:mta-211-216.sparkpostmail.com;PTR:mta-211-216.sparkpostmail.com;CAT:NONE;SFS:(13230031)(12012899003)(2092899003)(3092899003)(3072899003)(5062899003)(69100299006)(13102899003)(13012899003)(29132699018)(82310400017)(4123199003)(5063199003)(5073199003);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 08 Jun 2024 05:37:20.1591
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 0d6b0187-614b-4c1c-180c-08dc877d110c
+X-MS-Exchange-CrossTenant-Id: 6ffa22f4-4568-4105-ad43-2e3ad4726957
+X-MS-Exchange-CrossTenant-AuthSource:
+ BL6PEPF0001AB56.namprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DM6PR07MB7145
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:04.5318160
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.7633.034
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?YTFCd3BLZW55SmVKTDlPY0xITzdRZlBLWTBOQy8vTjJKdWUwWGpVcFlROGh5?=
+ =?utf-8?B?L0hveE1hOGlSRklGWWZNMk90dENkWC9HbVI1V1IycVR4bkNFamJJc25td01C?=
+ =?utf-8?B?eURTOElXcTRPbS9BSHc5ZnM5SkV5d2J6M3c2cGo3Wk1aV1pDUm9lT05GVlFt?=
+ =?utf-8?B?bllUUU1YS0JMb3A1dk83VncyQjRSd1UzTW9wZjlqN3lJejlIZXJjbHR5cjJq?=
+ =?utf-8?B?NVFaZ0ZDTXlLZ2JQWmQxUWFZVU80K0RUUXp2d1JkekhPbERGWmFkMG9xVk83?=
+ =?utf-8?B?N09pZ0daVXc4MG1xU1ZoNU9va1hJMXQ0QUpNaENBNTNLYitrZEpQNkF1USts?=
+ =?utf-8?B?RFlmOEpmb245aHE0U2swaVpIeHBiUzJEclZMaEpSZE43cHBraExmclB0K3Zm?=
+ =?utf-8?B?NDNnZUxkQnJ5cVNEWHhtYldWUlAzYmFuQVBLK2x2bkxpZ2cyU3JvVkpoNlNz?=
+ =?utf-8?B?c3RNQmFXeXMxcGp4MENvL0ZCcWhSODNRSnhFa252ZzV6bGVmYTNWclV2WCtF?=
+ =?utf-8?B?U1VWTU50ZURpY2F6T1NsaVA5UFpsYm9ZZUZ1d0JuaTdEUDM0akh1eURtZWh6?=
+ =?utf-8?B?NVJqaGo4TE5IalVvM0NkOUdHanZBcDVncWw4MUFjVHduUGJGaGhnR0tFelJM?=
+ =?utf-8?B?ZnROZGtMU1hNYXBBTGhxZ0JUdlFqY1M3K0FTMU5QTldmY0tpZ3pqSjIxSVVj?=
+ =?utf-8?B?YVNXUmtXQU1rL3dLdzlwRW1QSnl6R2MvWktqUWpIbURSc2U4d3MycmdNMlFv?=
+ =?utf-8?B?OWQrVFY4VHUzQnFPb08xRXJLWG5qWFZVNzk3WHBzSEpHV3VMa0tWeEEyZFIz?=
+ =?utf-8?B?N2I3WVV5c3N6cHVXWHpkcFR1aE1NWVlmY2RwaFFLelZVSGFWTE10RDFTS0dO?=
+ =?utf-8?B?aUY5d0RYY3NEY0ZIMmhmR2Y0VGw1L3QxOHJnZTM2S1JTakVab3kxWjlJdnZW?=
+ =?utf-8?B?bmpKbG15VGRoOFpTLzFQUnRQd29EUXpzejVQUzB4eGl2NjNZN1BCZy9GSFJr?=
+ =?utf-8?B?Qkk5VDkzRno5MWtBZlRsRU1LOFJqRk9GLzhCQlYxVSs1dGN6U25CWkJHRE85?=
+ =?utf-8?B?WTRuNG8rMEoyVUY3WHpObXc0K1QyRUdyNDFwN2F5WmpUbXo1MEdLN2Y3ZmFK?=
+ =?utf-8?B?cVpjNzhXa2cvT2VpV3RyeWpuYko0dmNqNnA4emU1bFhEbUowZElsbTJQcmdN?=
+ =?utf-8?B?MitTcEhwbjBaNkR4bmhNWkxQbGhFQnR5WEZWUzMwV1czanNZUFUyNjJGMFBo?=
+ =?utf-8?B?OHA1L1FjbERqeGh2NndVTVhrVldhY1Y1aWl5T0o5Q0swS3hCazRXOFpSUUZt?=
+ =?utf-8?B?WFZWYlptZjgzUVJpQ0VqUEVDZWc0OFJNVUVvWFNlWFNZK3cva2dJblNqSDdu?=
+ =?utf-8?B?VkVZeGxTODBqZVJGYksxci8zSlYrQ3dIaUpXd1JKNFhvMmYzeWFVNEJQT0x6?=
+ =?utf-8?B?bkxhZk82TXdET1MwWXFLMjNhSGhjYytZVy9DeHZ5OE11LzFyRWVhbFNwS1BW?=
+ =?utf-8?B?bkYralA5ZFJOMnJpZlhKTjhzZWNpdFJScjY2R1Jkditzb01SbGhLRnZCREZt?=
+ =?utf-8?B?Sko2bXRsTm1oL3R4UldJZTlxQzJQTFNEWEhETWdJUmx6d0dDYzJJc3R0cHdx?=
+ =?utf-8?B?THRHdUJ0bytqSTVOejUzOUdHclFiMGVaT0Z4WlZWSVgwaDcxT1ZNbE9QMXBH?=
+ =?utf-8?B?ZStRNldkWWVOUXJ4dmsrV1FwSkpwbFdTcmNrc0FJTE1yYlpja3BSMkVGL0kv?=
+ =?utf-8?B?bzZPTXQyb2gwU1ZXUVBsZjlzZngvSjJLYzcyQXJjSHVCUytlSzMrcmdxQ29B?=
+ =?utf-8?B?cllPRUVHMXdTd01zUWI5b29Sck9yMUw4OXpzT2pCNDVjbC9ZTWNPc0JEMDNJ?=
+ =?utf-8?B?OVkxVHdTQm8vSmZadXdYTUQ2cWw5U1FSRktrRTIxWE5DVFluQ2lvRWNpL3FS?=
+ =?utf-8?B?SVhGVVA5L2pkemFMTjdQejlhVnp6b01JZSttcWQ0NDlsRU1wZHZhbm9FSjZv?=
+ =?utf-8?B?OFE0M3VoUU94bkFMTTZNdjQ2OThJcVNlTmlsOCtRellmdFhOSmJWblhZL0k0?=
+ =?utf-8?B?b2x4UE14bi9LWXQzWGQ4SnMxeENlRzQ0TGtNYmFoc3hPMzlvZ0JNb2I2K3Nn?=
+ =?utf-8?B?UEp5MXoxZHBqRGJER2hrbW9NdjlUcUU4OVdkejdLZDB3NkhiL1B5RzJSVlhP?=
+ =?utf-8?B?Vy9Od3FFR2pNWFJXeVhtSmlGVUJsQ2xwMEdqM2swTFNnNWVESnhMd2EwbUpE?=
+ =?utf-8?B?V25TNlhJanZROS9vTmU2UFJIY1lQZitFajlCNUpIMlVnY3AxVHRWd1NpQjM1?=
+ =?utf-8?B?WkxVQzZIKzZDQXg3cS83cWdNc0hWZHMxR2ZFU3dxaHZVR0hyZDFkM285cVF3?=
+ =?utf-8?B?UGc5UWNrSlJPTk5wTlpEc1p5YjJDRUxqWkZjSndLVWJsUk9mZUljN3dZcWIy?=
+ =?utf-8?B?RTlZeW9SeTRROTZUaWpZQmp3TUduKy9pcVlzTlZ1OVRJaWJFTUlqbU9XNWFG?=
+ =?utf-8?B?VGlzMlNmWFN3c1FSeUtLWm9JYXVDTzVlZURkQTJKeEgyOXhCd0FrcGpROERu?=
+ =?utf-8?B?cHN5WGFlUldUNUdKcmNiNUhsL1lVZUVWRVFLcEZiaWtOZVlhWmMzR1lVdjhv?=
+ =?utf-8?B?UzEwci9xQmU0dlA4UENhcS83N05sL0JxNjNGb2ZKU3ZiaXp5UWgzNURaZkcz?=
+ =?utf-8?B?RzBCTXFzTWZRS1VPeTVqeW11eTlWM2xoY0IyNndQNHhFQW5OUjcyRjFMZVBP?=
+ =?utf-8?B?SVRMM0J0UTBYaCtxWVE4YUdiM2N3ZUozN0tya0tidWNlODE2Z3VFK2VwOEVa?=
+ =?utf-8?B?SCtuZGJuZDJSbnZQbThmNTVGNERUTHlaZWI4OHFHL3FyRFRtcmFRVHhhTGg3?=
+ =?utf-8?B?eG1nMlZLaWhVQUluVUY3cUx0a0ZBdUR6MVI0SFhqOWJ2aUNNbnJudXRsZXBV?=
+ =?utf-8?B?cThCbHhSTVQyajYvWEE4Y0RpOHZtNFFtK0JMRU8vcHBLSHZSN1JhYndvTXdR?=
+ =?utf-8?B?Q3ovWisxVFhyOEhHMWhRbWdPVkRWcWRUR2VrR0lWcnJnQ1F0eFFISnBOM0hG?=
+ =?utf-8?Q?H+kH15Rlq49c1h5qGXccv7LtfBGtHwZe4=3D?=
+MIME-Version: 1.0
+
+--_----2uv+FVXcyf8+EQKslBL72g===_BA/F5-06275-E0EE3666
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="UTF-8"
+
+Your team is collaborating on Webex (https://www.webex.com). Get started.
+
+Collaboration just got easier.
+Welcome to Webex!
+
+Harvard University is using Webex to collaborate in one place, from anywhere - with a seamless  experience. Click on the link below to activate your account.
+
+Activate (https://web.webex.com/launch?email=sgarfinkel%40fas.harvard.edu)
+
+
+
+We've got everything you need to make using Webex fast and easy. Check it out here https://www.webex.com/essentials/teams.html/
+
+Thank you,
+The Webex Team.
+Contact us at https://collaborationhelp.cisco.com/contact if you need help.
+
+Privacy Statement: https://www.cisco.com/c/en/us/about/legal/privacy-full.html
+Terms of Service: https://www.webex.com/terms-of-service.html
+
+Copyright 2024 Cisco Systems and/or its affiliates. All rights reserved.
+Cisco Systems, Inc. 170 West Tasman Drive, San Jose, CA 95135.
+Sent to sgarfinkel@fas.harvard.edu
+--_----2uv+FVXcyf8+EQKslBL72g===_BA/F5-06275-E0EE3666
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html><html xmlns=3D"http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><t=
+itle id=3D"pageTitle">Your Webex account is ready! Join Harvard University<=
+/title>
+   =20
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1">
+    <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+    <meta name=3D"color-scheme" content=3D"light dark">
+    <meta name=3D"supported-color-schemes" content=3D"light dark">
+   =20
+    <style>
+        @media screen and (orientation: portrait) {
+            .cover-illustration img {
+                width: 200px;
+            }
+            .divider-table {
+                width: 375px;
+            }
+            .footer .footer-copyright {
+                font-size: 10px;
+            }
+            .main {
+                width: unset;
+            }
+        }
+    </style>
+    <style type=3D"text/css">
+        a,
+        a:link,
+        a:visited,
+        a:hover {
+            text-decoration: none;
+        }
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td {
+            line-height: 100%;
+        }
+        .ExternalClass {
+            width: 100%;
+        }
+    </style>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Helvetica Neue", Arial;
+        }
+        table {
+            border-collapse: separate;
+        }
+        .divider-table {
+            border-collapse: separate;
+            width: 600px;
+            margin: auto;
+            margin-bottom: 50px;
+        }
+        .divider {
+            border-top: 1px solid #767676;
+        }
+        .footer {
+            font-size: 14px;
+            text-align: center;
+            width: 100%;
+            background-color: #f2f2f2;
+            color: #767676;
+            letter-spacing: -0.3px;
+            padding: 60px 0;
+        }
+        .footer td {
+            padding-bottom: 30px;
+        }
+        .footer .footer-privacy-and-terms {
+            line-height: 30px;
+        }
+        .footer .footer-copyright {
+            letter-spacing: -0.1px;
+            line-height: 20px;
+            padding-bottom: 60px;
+        }
+        .footer .footer-privacy-and-terms a {
+            color: #767676;
+        }
+        .footer .footer-logo {
+            padding-bottom: 0;
+        }
+        .main {
+            width: 600px;
+            margin: auto;
+            padding: 0 20px 10px 20px;
+            box-sizing: border-box;
+        }
+        .main td {
+            padding-bottom: 50px;
+        }
+        .activation-code-10digit {
+            padding:20px;
+            font-size:50px;
+            line-height:100%;
+            letter-spacing:20px;
+            text-align:center;
+            color:#121212;
+            background-color:#f2f2f2;;
+        }
+        .activation-code-10-19digit {
+            padding:20px;
+            font-size:30px;
+            line-height:100%;
+            letter-spacing:10px;
+            text-align:center;
+            color:#121212;
+            background-color:#f2f2f2;;
+        }
+        @media (prefers-color-scheme: dark) {
+            .activation-code-10digit {
+                background-color: rgba(255, 255, 255, 0.2);
+                color: #FFFFFF;
+            }
+            .activation-code-10-19digit {
+                background-color: rgba(255, 255, 255, 0.2);
+                color: #FFFFFF;
+            }
+        }
+    </style>
+    <style>
+        .cover-illustration {
+            text-align: center;
+        }
+        .cover-illustration img {
+            width: 300px;
+            height: auto;
+        }
+        .heading {
+            font-size: 48px;
+            font-weight: 500;
+            letter-spacing: -0.2px;
+        }
+        .content {
+            margin: 0 auto;
+        }
+        .text {
+            font-size: 20px;
+            padding: 4px 0;
+            letter-spacing: -0.4px;
+        }
+        .text .text-first-line {
+            margin-bottom: 30px;
+        }
+        a {
+            color: #0672ef;
+            text-decoration: none;
+            letter-spacing: -0.4px;
+        }
+        .section-title {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: -0.4px;
+        }
+
+        .button {
+            background-color: #767676;
+            border-radius: 32px;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            padding: 2px 0;
+            letter-spacing: -0.2px;
+            text-decoration: none;
+            -webkit-text-size-adjust: none;
+            font-style: normal;
+        }
+
+        .button-wrapper {
+            border: 10px solid #767676;
+            border-width: 12px 20px;
+            background-color: #767676;
+            border-radius: 32px;
+        }
+
+        .button-text-container a {
+            color: #ffffff;
+            text-decoration: none !important;
+        }
+
+        .nested-gray-section {
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            padding: 30px;
+        }
+
+        .cover-illustration-table {
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            border: 30px solid transparent;
+            margin: 0px;
+        }
+
+        .no-padding-cell {
+            padding: 0 !important;
+        }
+    </style>
+</head>
+<body>
+<div style=3D"color:transparent;visibility:hidden;opacity:0;font-size:0px;b=
+order:0;max-height:1px;width:1px;margin:0px;padding:0px;border-width:0px!im=
+portant;display:none!important;line-height:0px!important;"><img border=3D"0=
+" width=3D"1" height=3D"1" src=3D"http://tracking-us.webex.com/q/LWEI-OOcqW=
+6G0awpTm26bQ~~/AAPERgA~/RgRoRnMOPVcDc3BjQgpmYQ7uY2bxe1-3UhpzZ2FyZmlua2VsQGZ=
+hcy5oYXJ2YXJkLmVkdVgEAAAAAQ~~" alt=3D""></div>
+
+<table class=3D"content">
+    <tr>
+        <td>
+            <table role=3D"presentation" border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"15">
+                <tr>
+                    <td>
+                        <a href=3D"https://urldefense.proofpoint.com/v2/url=
+?u=3Dhttps-3A__www.cisco.com&amp;d=3DDwMCaQ&amp;c=3DWO-RGvefibhHBZq3fL85hQ&=
+amp;r=3DWqdyPaSjfBAaThNkhgeRe2m7DoAUYP37KU7SxmkCyiM&amp;m=3DC0NplrcrTpRFuAy=
+UmsoOOwJ932slwSTuI2eSTqEbud5A1yjRhRqEk--D3z4npJa6&amp;s=3Dr0WTOR6W14NwY1mgB=
+iglhSHkLweUfUpm6-SsCrZxrVU&amp;e=3D">
+                            <img alt=3D"Cisco Webex Logo" height=3D"40" src=
+=3D"https://www.webex.com/content/dam/www/us/en/logos/webex-greylogo.png">
+                        </a>
+                    </td>
+                   =20
+                   =20
+                </tr>
+            </table>
+            <table class=3D"divider-table">
+                <tr>
+                    <td class=3D"divider">&nbsp;</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <table role=3D"presentation" class=3D"main">
+                <tr>
+                    <td class=3D"cover-illustration">
+                       =20
+                            <img alt=3D"Cover Illustration" class=3D"cover-=
+illustration" src=3D"https://images.use.webex.com/EloquaImages/clients/CMCW=
+ebEx/%7B641e3d6b-8221-4091-9b4c-e312089c4ab7%7D_collaboration-seamless-320.=
+png">
+                           =20
+                       =20
+                    </td>
+                </tr>
+                <tr dir=3D"ltr">
+    <td class=3D"heading">
+        <span>Collaboration just got easier.</span>
+    </td>
+</tr>
+                <tr dir=3D"ltr">
+    <td class=3D"text">
+        <div class=3D"text-first-line">
+            <span>Welcome to Webex!</span><br>
+        </div>
+        <span>Harvard University </span><span>is using Webex to collaborate=
+ in one place, from anywhere - with a seamless</span> <span>experience. Cli=
+ck on the link below to activate your account.</span>
+    </td>
+</tr>
+                <tr dir=3D"ltr">
+    <td>
+        <table>
+            <tr>
+                <td class=3D"no-padding-cell">
+                    <div class=3D"button-wrapper">
+                        <span class=3D"button-text-container">
+                            <a href=3D"https://web.webex.com/launch?email=
+=3Dsgarfinkel%40fas.harvard.edu" class=3D"button">
+                                <span>Activate</span>
+                            </a>
+                        </span>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+                <tr dir=3D"ltr">
+    <td class=3D"text">
+        <span>Sign up with:</span> <b>sgarfinkel@fas.harvard.edu</b>
+    </td>
+</tr>
+               =20
+                <tbody dir=3D"ltr">
+    <tr>
+       =20
+    </tr>
+    <tr>
+        <td class=3D"text">
+           =20
+               =20
+               =20
+               =20
+           =20
+            <span>We've got everything you need to make using Webex fast an=
+d easy. Check it out here</span><br>
+            <a href=3D"https://www.webex.com/essentials/teams.html/" target=
+=3D"_blank">
+                <span>https://www.webex.com/essentials/teams.html/</span>
+            </a>
+        </td>
+    </tr>
+</tbody>
+
+                <tr dir=3D"ltr">
+                    <td class=3D"text">
+                        <span>Thank you,</span><br>
+                        <span>The Webex Team.</span><br>
+                        <div>
+                           =20
+                           =20
+                            <p>
+                                <a href=3D"https://urldefense.proofpoint.co=
+m/v2/url?u=3Dhttps-3A__collaborationhelp.cisco.com_contact&amp;d=3DDwMCaQ&a=
+mp;c=3DWO-RGvefibhHBZq3fL85hQ&amp;r=3DWqdyPaSjfBAaThNkhgeRe2m7DoAUYP37KU7Sx=
+mkCyiM&amp;m=3DC0NplrcrTpRFuAyUmsoOOwJ932slwSTuI2eSTqEbud5A1yjRhRqEk--D3z4n=
+pJa6&amp;s=3Dm0erb3CyMnb0woFi4YX7_5puqYyK1CM7-Og9vbnYamA&amp;e=3D">Contact =
+us</a>
+                                if you need help.
+                            </p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <table role=3D"presentation" class=3D"footer">
+                <tr>
+                    <td class=3D"footer-privacy-and-terms">
+                        <span>
+                            <a href=3D"https://urldefense.proofpoint.com/v2=
+/url?u=3Dhttps-3A__www.cisco.com_c_en_us_about_legal_privacy-2Dfull.html&am=
+p;d=3DDwMCaQ&amp;c=3DWO-RGvefibhHBZq3fL85hQ&amp;r=3DWqdyPaSjfBAaThNkhgeRe2m=
+7DoAUYP37KU7SxmkCyiM&amp;m=3DC0NplrcrTpRFuAyUmsoOOwJ932slwSTuI2eSTqEbud5A1y=
+jRhRqEk--D3z4npJa6&amp;s=3DH2GsJ69LSGYLCNJgwYhv8eTyXUneGii7tcN73rW1TRM&amp;=
+e=3D">
+                                <span>Privacy Statement</span>
+                            </a>
+                            |
+                            <a href=3D"https://www.webex.com/terms-of-servi=
+ce.html">
+                                <span>Terms of Service</span>
+                            </a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class=3D"footer-copyright">
+                        =C2=A9&nbsp;<span>2024</span>&nbsp;<span>Cisco Syst=
+ems and/or its affiliates. All rights reserved.</span> <br>
+                        <span>Cisco Systems, Inc. 170 West Tasman Drive, Sa=
+n Jose, CA 95135.</span> <br>
+                        <span>Sent to</span>&nbsp;<a href=3D"mailto:sgarfin=
+kel@fas.harvard.edu">sgarfinkel@fas.harvard.edu</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class=3D"footer-logo">
+                        <img alt=3D"Footer Logo" height=3D"40" width=3D"80"=
+ src=3D"https://images.use.webex.com/EloquaImages/clients/CMCWebEx/%7Bd4f37=
+69e-4c7a-4594-8535-ce5eb6dd2c60%7D_cisco-logo.png">
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+   =20
+</table>
+
+<img border=3D"0" width=3D"1" height=3D"1" alt=3D"" src=3D"http://tracking-=
+us.webex.com/q/gp0kLjFuwy5A7_Mb6LoBig~~/AAPERgA~/RgRoRnMOPlcDc3BjQgpmYQ7uY2=
+bxe1-3UhpzZ2FyZmlua2VsQGZhcy5oYXJ2YXJkLmVkdVgEAAAAAQ~~">
+</body>
+</html>=
+
+--_----2uv+FVXcyf8+EQKslBL72g===_BA/F5-06275-E0EE3666--

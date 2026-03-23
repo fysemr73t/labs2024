@@ -1,0 +1,291 @@
+Received: from CH2PR07MB7240.namprd07.prod.outlook.com (2603:10b6:610:7e::9)
+ by SA0PR07MB7516.namprd07.prod.outlook.com with HTTPS; Fri, 27 Sep 2024
+ 18:55:04 +0000
+Received: from BN0PR02CA0007.namprd02.prod.outlook.com (2603:10b6:408:e4::12)
+ by CH2PR07MB7240.namprd07.prod.outlook.com (2603:10b6:610:7e::9) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7982.27; Fri, 27 Sep
+ 2024 18:55:00 +0000
+Received: from BL6PEPF0002256F.namprd02.prod.outlook.com
+ (2603:10b6:408:e4:cafe::ad) by BN0PR02CA0007.outlook.office365.com
+ (2603:10b6:408:e4::12) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8005.22 via Frontend
+ Transport; Fri, 27 Sep 2024 18:55:00 +0000
+Authentication-Results: spf=pass (sender IP is 23.21.109.197)
+ smtp.mailfrom=psm.knowbe4.com; dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=meet-zoom.us;compauth=fail
+ reason=001
+Received-SPF: Pass (protection.outlook.com: domain of psm.knowbe4.com
+ designates 23.21.109.197 as permitted sender)
+ receiver=protection.outlook.com; client-ip=23.21.109.197;
+ helo=psm.knowbe4.com; pr=C
+Received: from mx0a-00171101.pphosted.com (67.231.148.27) by
+ BL6PEPF0002256F.mail.protection.outlook.com (10.167.249.37) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.8005.15 via Frontend Transport; Fri, 27 Sep 2024 18:54:59 +0000
+Received: from pps.filterd (m0338034.ppops.net [127.0.0.1])
+	by mx0a-00171101.pphosted.com (8.18.1.2/8.18.1.2) with ESMTP id 48RFxJ1I002450
+	for <sgarfinkel@fas.harvard.edu>; Fri, 27 Sep 2024 14:54:59 -0400
+Authentication-Results-Original: proofpoint.harvard.edu;	spf=pass
+ smtp.mailfrom=f9e9a5bb.7b5606cf@psm.knowbe4.com
+Received: from psm.knowbe4.com (psm.knowbe4.com [23.21.109.197])
+	by mx0a-00171101.pphosted.com (PPS) with ESMTPS id 41w8qy6292-1
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128 verify=NO)
+	for <sgarfinkel@fas.harvard.edu>; Fri, 27 Sep 2024 14:54:58 -0400 (EDT)
+Message-ID: <f9e9a5bb.7b5606cf@psm.knowbe4.com>
+Date: Fri, 27 Sep 2024 18:54:48 +0000
+From: Zoom <noreply@meet-zoom.us>
+Reply-To: Zoom <noreply@meet-zoom.us>
+To: sgarfinkel@fas.harvard.edu
+Subject: You were mentioned in a meeting transcript
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+X-PHISH-CRID: 2215180978
+X-CLX-Response: 1TFkXGxsaHBEKTHoXGhEKWUQXaWgZGhNiHVlTc0MRClhYF2Z5QV1zHVMbU2d EEQp4ThdsfGwZZRl7fXNzYxEKeEsXZnlBXXMdUxtTZ0QRCkNIFwcZGRkRCkNZFwcfEhsRCkNJFx oEGhoaEQpZTRduT0ZDXE9YEQpfWRcSGh0RCl9NF25PRkNcT1gRCllJFxpxGhAadwYZGBJxGxITH
+ hAadwYYGgYaEQpZXhdoY3kRCklGF0JLWFxLWE51QkVZXk9OEQpJRxd4T00RCkNOF2kbQh5PQmxS WVl6ZkFwRmliaUVMZl5GGXwdf09NZEkdEQpYXBcfBBoEGR0cBRsaBBsaGgQbGR4EGR4QGx4aHxo RCl5ZF09mYXtOEQpNXBceGR8RCkxaF2lrbU1dTREKTU4XaGsRCkJPF2VMBWheS1tPS1JzEQpDWh
+ cYGQQYGwQbGhMEGxMdEQpCXhcbEQpZRRccEQpFSRcbEQpFZhcbEQpCRRdoW2QZGH0dfX8SbxEKQ k4XbHxsGWUZe31zc2MRCkJMF2Z5QV1zHVMbU2dEEQpCbBdsUmJeaXoFW3BSHBEKQkAXZWdpe35G TVhTGXsRCkJYF2IYHmlyUn5MYhhTEQpaWBcfEQp5Qxdtek5gWRMcBXxrZBEKWUsXGx4ZGhEKWks
+ XGx4ZGhEKcGgXbkRzZWhBckdjchwQGhEKcGgXa0J7HH5PH2xAeh8QHxwRCnBoF2d7ZlNrQR9cGW d6EBoRCnBoF2IFWnpmWWJkaXx9EBoRCnBoF2hkSHhzTxlaHlNtEB8YEQpwaBdmQhtaTmVFYhxtQ hAcGxEKcGgXY1tpWhx5RE9oTXIQHhoRCnBoF21+TntGE0ccHlp/EBoRCnB9F2tfHHhAQUBpQ39Q
+ EB8eEQpwfRdiYntvRUMcbUh/eBAaEQpwfRdsb2ZOBRhaGHJZHRAaEQpwfRdvUmBrSURFGm9/XxA aEQpwfxdsfn1+T1h8fl8SYBAfGxEKcF8XZnMYE0MeU1hnZ2kQEhgRCnB/F2lCHB5CeUsYYlxaEB saHxEKcF8XZWJiXlJNf2tZHXAQGhEKcF8XZHthXURTHgF7b3oQGhEKcF8XellnYHN5QF4eWRMQG
+ hEKcGwXYBNnW2xYf1x7f2EQEhgRCm1+FxoRClhNF0sRIA==
+X-Proofpoint-ORIG-GUID: C1h4ehFxssPLkZlCHCofLtl3V7UegNc7
+X-Proofpoint-GUID: C1h4ehFxssPLkZlCHCofLtl3V7UegNc7
+X-CLX-Shades: Deliver
+X-HUIT-Filtered: true
+X-Proofpoint-Virus-Version: vendor=baseguard
+ engine=ICAP:2.0.293,Aquarius:18.0.1039,Hydra:6.0.680,FMLib:17.12.60.29
+ definitions=2024-09-06_09,2024-09-06_01,2024-09-02_01
+X-Proofpoint-Spam-Details: rule=notspam policy=default score=0 mlxlogscore=29 phishscore=0 mlxscore=34
+ clxscore=1106 suspectscore=0 impostorscore=0 malwarescore=0 spamscore=34
+ bulkscore=0 lowpriorityscore=0 adultscore=0 priorityscore=0
+ classifier=clx:Deliver adjust=0 reason=mlx scancount=1
+ engine=8.19.0-2408220000 definitions=main-2409270138 domainage_hfrom=1430
+ domainage_replyto=1430
+Return-Path: f9e9a5bb.7b5606cf@psm.knowbe4.com
+X-MS-Exchange-Organization-ExpirationStartTime: 27 Sep 2024 18:55:00.0750
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 88fd7871-b024-48e8-0ec7-08dcdf25e358
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 6ffa22f4-4568-4105-ad43-2e3ad4726957:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-SkipListedInternetSender:
+ ip=[23.21.109.197];domain=psm.knowbe4.com
+X-MS-Exchange-ExternalOriginalInternetSender:
+ ip=[23.21.109.197];domain=psm.knowbe4.com
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic:
+ BL6PEPF0002256F:EE_|CH2PR07MB7240:EE_|SA0PR07MB7516:EE_
+X-MS-Exchange-Organization-AuthSource:
+ BL6PEPF0002256F.namprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 88fd7871-b024-48e8-0ec7-08dcdf25e358
+X-MS-Exchange-AtpMessageProperties: SA
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam:
+ BCL:0;ARA:13230040|2092899012|5062899012|69100299015|82310400026|3072899012|12012899012|34002699019|5073199012|80162021|35050700001;
+X-Forefront-Antispam-Report:
+ CIP:67.231.148.27;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:NSPM;H:psm.knowbe4.com;PTR:psm.knowbe4.com;CAT:NONE;SFS:(13230040)(2092899012)(5062899012)(69100299015)(82310400026)(3072899012)(12012899012)(34002699019)(5073199012)(80162021)(35050700001);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 27 Sep 2024 18:54:59.8407
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 88fd7871-b024-48e8-0ec7-08dcdf25e358
+X-MS-Exchange-CrossTenant-Id: 6ffa22f4-4568-4105-ad43-2e3ad4726957
+X-MS-Exchange-CrossTenant-AuthSource:
+ BL6PEPF0002256F.namprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CH2PR07MB7240
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:05.0732734
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.8005.020
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?VUNaeFNkQTNneXp4Q0QveSszbmVFMVVwRXVSbThMRzJpVVc3NlloYk1iNWVI?=
+ =?utf-8?B?YmJoNzRjVjVvdkZsN2NtcFIyN0pjZHF4b1VGSjAvSFVoOWN5Wm0yV0w5WDBq?=
+ =?utf-8?B?V0hOTzZkeDRydUtiRWVkaW1Mb2xVUnB4NWJibGhMa2xEaGdzVDc1RlpIcDVw?=
+ =?utf-8?B?cysxUW5FMHVrTUI4ZjVMRlc0d1dqRUlSeXJ4YVdKMFJNWXQxVWU4c3VpUDlT?=
+ =?utf-8?B?ZUl4WnQ1RGFDdnljSSsybDZPaDVXVHdKeWNaNEFLTzRyNjBoYUswRDJ6S3dR?=
+ =?utf-8?B?dllCRVFQK1lLWmI2dzQxR0VLQThvQ0NGK0ZUN2lwdGpGQXkwMkcwSXVSeVQ3?=
+ =?utf-8?B?ZndzY0xhbzlEdERTMXAyM0ordXB0dUppMU1mS1JvZm9uU1IzeGlnVmVueWZj?=
+ =?utf-8?B?MDZSdWp2dUlRa1d4T2hJWS8vSy91QlF0RDZ6UDZvLzdwRVBGaHl3ckQybVFJ?=
+ =?utf-8?B?cFgxdXc5UCtKNzZON3JkcnBEVjZRT3k3K1V2c0xsdTJhRVh1STA3V2FXdTQr?=
+ =?utf-8?B?MlpyVnpsai82cVdGU2x0NS9ZQU1xMS80RU9JTXhZS0pKOFlDbE1lOFlEOXVv?=
+ =?utf-8?B?YU1tcnJjRWJLQVZnUnRVVTJVb1Q3aFN5WnhJamlIaEtGbGlrN1g2eklxemt3?=
+ =?utf-8?B?SWRGUkVQakdFT3Z3cmtMN0FjSVlHeHJrak9UWVd2TDlsUzl0Umo3VmdWZVNM?=
+ =?utf-8?B?UlBSemdSakpEVHVnQ3NJWEFPWGJLdDZWd3l1alpIQWIyNStmVVNscEhPSnBq?=
+ =?utf-8?B?dWV1S0RXUEsxMnp4WVg2YUN3dnFKYjB4cGhvVFk1WlR1aXRLYXR0cUNtV21o?=
+ =?utf-8?B?VVlwME1MYkZqdzhZcTY2SHdaVlVqcjQ2c1NzUlZLMGhtRHpnUzFBdU9ad084?=
+ =?utf-8?B?THVpYUUvM0pRbmY1SlpFVFo5VnBkNFgyczlqNkxlOEpjOXJIcFhUd3ZQSzEw?=
+ =?utf-8?B?c1hwQStpYisyVWV1OGFqOHh5NlZURlVVVjBMUlhYMnhSbUdkSHp2WHpuNEtW?=
+ =?utf-8?B?UlVZVmJXOTF3Y01sZFR4V0ZNSHRXc2tTS3RzYjVPSVdacXRXMW1jWEdGZW0w?=
+ =?utf-8?B?cXVCcnppLzhneE8yQll3N0ZJV3RPZmVSUHBMRm1jQjlZdTZ1U3ZXMzBxVlFT?=
+ =?utf-8?B?dnVPOW1zWEdUYWROc1RyRmhkMFpRY1d6RHNmbFN6a0hRTjNrSU5yZ2VSYUQv?=
+ =?utf-8?B?N0ZWcHpnQ1d5SEFyOXZrTlRYSTNoM0hleTRQY2JrR0N4UDhNeng3bjdDU3Q4?=
+ =?utf-8?B?bHZrRE9wYnBaRGVVd1hCb2VYdmhWNnZkalkyNFZwSlpNWGlyYmk2L0FFQ1NZ?=
+ =?utf-8?B?Slg4bVh1a3puQkFjNmExVmtsam96NC8rTGZwUXdsbVpyRjhQSk05Q3l3azNC?=
+ =?utf-8?B?cS82bnJUNE5UODdkdHZNK1NhdnRob0JFSzF0dG5RUTZnUlFLZGYrdlBtU2U1?=
+ =?utf-8?B?YTlWaGpzRHg5dGZWaytyTExFczl2T1dXU3kwa3laRHVZQ0NhWS9EYzloODRl?=
+ =?utf-8?B?STk3MENCR0x1dWg4YW15RTJjTi9TVGQyNkljR3NUcGFadmRwaWJSUjBrMHdt?=
+ =?utf-8?B?OWhseTllNzhFckhURnpIbVlFOEltM1BheEZSY05hOUtDNC9CQUNRVUlmbzhS?=
+ =?utf-8?B?M0twYjRNWWtWM0ppNnJVNlhwWkIwcUE2cVZLcVFnMlJ5QW9FaDJ1VHJ3NGZt?=
+ =?utf-8?B?d2p1dktmVWNqWFRUQjhUNWRWTnpVc3BJT09ISjJTdkt6dGttdWRpeFp6TWU2?=
+ =?utf-8?B?R3EyTWIrT05PVkxYbFp3dnJtN1UrTllqZDhVUStqWnhqRW51WUdiZnplZ1R4?=
+ =?utf-8?B?dDB5TUJYQmswSStnSlljS25IbWIzN1pIdDU1QklycGtvZ0JNaGpTQSthKzlI?=
+ =?utf-8?B?LzU0T3huVzRqOUVqclhrQXdEWGRxeVlRUzlxZkNFU0hMOFdqVHhtRGRCQnE5?=
+ =?utf-8?B?R0liN3VpNklFNk8zN25tV3k5OHUraVRXS2V5b09PSkxqZ0dSOFJFU3BQVFhw?=
+ =?utf-8?B?WXNzODdnMWtlYmdQK1orVlB6eEV3ejhaZ09GbVlTdHBpRStYKyt2bVNkdG8v?=
+ =?utf-8?B?am5UbzZON2FlV3JFRTlNeWhkRTg2Z05BWHBwaGJ4VnZBYzN0RGs2ODg3Wlpo?=
+ =?utf-8?B?RjFGUXMrUjhIY203Z1hQdHpwRXF2RlhnTTAydGdaNk5KeERnNWQ4ZjB2M21R?=
+ =?utf-8?B?Q29mSDdaMW50RnBCUjkzaWJJVFNlVlRhQ3ZkYmozL1drdjg2MWVlcjNQVXJl?=
+ =?utf-8?B?Qi9ONTVLVWU1Zm4yYU9EeFA4MUo0WWxPRnl1SFdId3d1cFR3Z0VvdW85dnBs?=
+ =?utf-8?B?Z3JSNktlY3pKbGludTZvUzI4emFYUXFBdFdFRFIxN09DSmxHcllKVDRuUFdP?=
+ =?utf-8?B?WEtreWUySDNvRWp2VEtyUExXaXF6SUNTeXFxMzhRRk1XQXNZTnhkNUE3eWo1?=
+ =?utf-8?B?Q1NIVE0xVUJOODJmTnFSNmt6bWZ5OGRINzZwaVBOY1l3dFVic3hPdEJIRkp0?=
+ =?utf-8?B?dk1mTW94d3k1QTJHWURFMXRoSkRDNFA2cUgyYzVTekxScDhrMk9tOWtLZDQx?=
+ =?utf-8?B?SC9GS1gvS3JSY1pFaUJ1VTNxNlB3aXNUNXhubCtMTm5PeGgra0VsVlhqU2Nl?=
+ =?utf-8?B?bTlTUStvWEJnSHJ4VjZaV2hidzR5RktoaFRleGdlV3FYclBtSGVMSUpZTFNS?=
+ =?utf-8?B?Q3l0WGdTY2RucjdmMXRaWW9IczJ1SG01a0hnOWhNVXZhaDg4M283RU51cmN4?=
+ =?utf-8?B?Rk14VEJPQzUxQ1AxS2cxcFRpNzVwM2l2K1hDUUMxQlkrMGR3aUphZ0YvdUFu?=
+ =?utf-8?B?QWE4K1RwRjhoOU9MWmFCMjgydmpnVWVtLzFGMU1GZmhZRFRJSW5ldG9hVzQx?=
+ =?utf-8?B?YWFvaFJOR3VSZjRkd1ZLaC9FeG5qTGhWa052NWFJbXR1NTYrUHU5bktheXh1?=
+ =?utf-8?B?UFNoVWQ4dm10TEdZa2xNZWJZU2Y2ejQ4RW00N1Nhb0FlakZFSllKYU1BUXVn?=
+ =?utf-8?B?Tnh2QktVMmVtM3l1RE5LZ2daWWdTK0g5bUtibzlObG5xODhpclhockx0N1VY?=
+ =?utf-8?B?bGhaRDczYTNTWUJQWEx2RkNNcmdSMmxXSWgyc1F0VnVSV2duSFJBNVExaHZz?=
+ =?utf-8?B?bjZMMFFtTWdvNDl5MVdxeUYrV0Rmb2ZORmc0cDRxWUw2c2hCZmhJWjhNbHhH?=
+ =?utf-8?B?eTJHTEZDbFQxSDFPR3ZYTTM4OEZiVnBjbnhxYzdhdG9WY0d6NURyaXgvemFW?=
+ =?utf-8?B?ZDMvdTNIYW9ISG85dmxZaVVwYUcwSmNUcGhLeGpJVTJ6emNPWTZyZUhtR3dH?=
+ =?utf-8?B?K29XclR2NzFWYlFsWkJnZlJqekpwSlZJVjNza09qdythdVpqRDdQMEFMUzhG?=
+ =?utf-8?B?b0Q0bjN5bHM4NzQyWFJ0VUYzS2VnenM1RXM4K2pzZWhCYVFkdjFlRUE0SzJJ?=
+ =?utf-8?B?Z3ZUR2xEaWVmM0ExWTYvcmplb1YxQ2JnOHVsVXczbzZYTVpsOVN0WkdlOThM?=
+ =?utf-8?B?VEJuYkhQQXczMU1TRUZuQlFvZGRRaFpmV0hkV2lBSlIwQUV6Q3gwUWtsSW9K?=
+ =?utf-8?B?WUtrNndmS0lWeWVLZ1BmVlFzeWhaY0lUWmswbVVmcVh5bjcvUzRvZUgyR08x?=
+ =?utf-8?B?M09jd0dsYjlNcEdXRStVUkZPcGtOdXNiMjZEYXd0K2J0b1dYdDVSVVY0Ymtt?=
+ =?utf-8?B?d1ZvOUU4K2s2cU1STERkK0Z1bVMveUJCWGdtM2RtNDhjSWxOTENTNHRVblN3?=
+ =?utf-8?B?Mm10RldTdndlSTNSQ2ZxemZ6YytoUXJlN2xnQTFDai9PZFZ3YTNqc3MxQktN?=
+ =?utf-8?B?SmF5UVAxQlAwWkZpSDBDekFCMmcwSnF6SllFL0JwajlUQVF0T3Z1ZWJZTHpr?=
+ =?utf-8?B?OWVKcGk0dURLMkt0eHNFMCtRakZyVzh3bWZML013NVIwVXdlb2k1bmp5RklL?=
+ =?utf-8?B?a2RBS0FDN3hpVm9MVXljTGtUTUk4SGhGQkNpdGJic1cvVDFXVk8vNE05QXl4?=
+ =?utf-8?B?RkRoVVA0UTdTbHhDN1E0K0lMeTA5YmFhVlhYZ2JuUmlYa0ViZURxYmo1U2Vj?=
+ =?utf-8?B?blRtVzd4Y2crREdDcUhCaWNUZXhrUDlQMTRiV2daMVBYNm5BZTltbzNkRmZO?=
+ =?utf-8?B?UFNxR1ZHbmJKbmUzWUFDMDllclZ1K3ZlV3JpUi9NVXpJYkh2NlR0UUhSR0lI?=
+ =?utf-8?B?K1JGYjRoeXNkdTRaNCs2bGVKMlVpSmx3Z1hISVVtODZBMGo3ZWozWkhSQWdi?=
+ =?utf-8?B?K2tqUjU5L0QzRkN5RlZ0bGMvNWZiU0p1MXNVbFhocldDVGxISzF3SC84eDhy?=
+ =?utf-8?B?ZnV3eUw2ZFRmanBOWWR4NzFQeVcyNGFaYXBYT01SYlBVZEt5TERVVE1TZUJz?=
+ =?utf-8?B?dDBaWDhFNEk3UU8wWGVLVkVVWUwwKzk3RXhSRU90eGx0VTZZYWpRdFBiVVBX?=
+ =?utf-8?B?SUw3UjNteFc0UXZqTG13ZHR4VUNxRTR1NjFLVWFLdW8wZmlWRjgrYXJpN1J3?=
+ =?utf-8?B?N0p5cXJkckdDeWgxNUxPRzExMW4rWC82MFRPNXh4ODgxZDd5dFRwclZ1dDlC?=
+ =?utf-8?Q?fM4YGDFclqDwHz6OZh9vF0yfVnmVwQFUCLOuGLfZY=3D?=
+MIME-Version: 1.0
+
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><s=
+tyle type=3D"text/css">body {
+		background-color: #ffffff !important;
+	}
+	body,
+	table,
+	td,
+	p,
+	a {
+		font-family: Arial, Helvetica, sans-serif !important;
+	}
+	table {
+		border-spacing: 0 !important;
+		border-collapse: collapse !important;
+	}
+</style>
+
+<div style=3D"background-color:#ffffff; color:#000000; font-family:Arial,He=
+lvetica,sans-serif; font-size:16px; margin-bottom:0; margin-left:auto; marg=
+in-right:auto; margin-top:0; table-layout:fixed; width:100%">
+<div style=3D"background-color:#ffffff; color:#000000; font-family:Arial,He=
+lvetica,sans-serif; font-size:16px; margin-bottom:0; margin-left:auto; marg=
+in-right:auto; margin-top:0; max-width:600px">
+
+<table align=3D"center" cellspacing=3D"0" role=3D"presentation" style=3D"ba=
+ckground-color:#ffffff; border-collapse:collapse; border-spacing:0; color:#=
+000000; font-family:Arial,Helvetica,sans-serif; font-size:16px; margin:0 au=
+to; max-width:600px; padding:0; width:100%">
+	<tbody>
+		<tr>
+			<td style=3D"padding:30px 0">
+			<table role=3D"presentation" style=3D"border-spacing:0; width:100%">
+				<tbody>
+					<tr>
+						<td style=3D"padding:15px 30px; text-align:center; width:600px"><img =
+alt=3D"Zoom" src=3D"https://upload.wikimedia.org/wikipedia/commons/thumb/1/=
+11/Zoom_Logo_2022.svg/320px-Zoom_Logo_2022.svg.png" style=3D"border:0; max-=
+width:100%; width:125px" width=3D"125"></td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td style=3D"padding:0">
+			<table role=3D"presentation" style=3D"border-spacing:0; width:100%">
+				<tbody>
+					<tr>
+						<td style=3D"font-size:16px; padding:0; text-align:center; width:100%=
+">
+						<h1 style=3D"color:#000000; font-size:18px; margin-bottom:0; margin-l=
+eft:0; margin-right:0; margin-top:0; padding-bottom:18px; text-align:center=
+">
+Hi, you are receiving this&nbsp;email as you were mentioned in a recent mee=
+ting.</h1>
+
+						<p style=3D"color:#000000; font-size:16px; line-height:23px; margin-b=
+ottom:0; margin-left:0; margin-right:0; margin-top:0; padding-bottom:18px; =
+text-align:center">This transcript will be available to read for 7 days.</p=
+>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td align=3D"center" style=3D"padding:0 30px 18px 30px">
+			<table align=3D"center" role=3D"presentation" style=3D"border-spacing:0"=
+>
+				<tbody>
+					<tr>
+						<td align=3D"center" bgcolor=3D"#035eff" style=3D"background-color:#0=
+35eff; border-radius:8px; padding:12px 24px"> <a class=3D"plink" href=3D"ht=
+tps://breakingnews.comano.us/XQmpIbTBvdU4xUk41Q0ptTnR6b2FIb0JFOHRTZ2tjKzJTU=
+zFNeUN6eGhZWFl5T250amt0WHdZd0ZtYkNDSEcwVms0aHJlQm5RVzRHMnI0alFlL29pV1Z6SEha=
+M0JuYy85VDhvRFFwbFowQXIyVGk4bjRHWlpvaExvTmZYMnNZZWE0M3hKSlEveEdGd25TTXZuamd=
+ZNUFadkJjejMzNDFFbFZHU21SM3BxTGZlN01LUm4wRnVBM0RTQ2duZlI0VVhWcDh0UEZDeG82dn=
+pLYXBWTFB0VjMtLVZtUnY2dWhWK3BlOEluS3AtLU0ybHdFVmhpYUZZTDk3SUhEdSt6OFE9PQ=3D=
+=3D?cid=3D2215180978" target=3D"_blank" style=3D"
+												font-size: 16px;
+												font-weight: bold;
+												text-decoration: none;
+												color: #ffffff;
+												border-radius: 8px;
+												display: inline-block;
+												letter-spacing: 1px;
+											"> Read Transcript </a> </td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+</div>
+</div>
+<a href=3D"https://breakingnews.comano.us/XQVRGaDgxNWxYaGVuS1RWbFF1Z0o0ZFRL=
+R3c0eEdJSmdyVndPZmJLRzRDUndGUzdSWTc3cUFJaE42QWJscllwQ1ZDNDVjLzZuWVR1Qlp2OWV=
+INVpVVlpvbkJYYjRwSGhHWlVhSlgrbVlsL0RlRDRjaHZqSHI4bmtUeThwMzdqTzhTTGZUaU9NVl=
+AyVGJMVlc1VnNzUmRlcldVYVFWQzF2dGE1R2RjT3JXRE42Y1ZEOVBDUlNBWTBpZ296T3k3TDJEW=
+nRvMFVIUEkvRTRtUjZhdVlzSW5CN1pwME5wQS0tQkxWd1BORnhXaGVuWk9aZy0tZy9LMUc5aW9R=
+REcwQXc0Q1V0aGdwQT09?cid=3D2215180978" style=3D"display:block;height:0;opac=
+ity:0;pointer-events:none;width:0;"> </a><img src=3D"https://breakingnews.c=
+omano.us/XUm5WWHdqai8zUnpEVHJ5bWJwb1g4RGw3eDY2QXk1UllLTlRmTWlCNnducXdDemI5a=
+jdiNzVzUGl1MHBQSGFDQTVFaUVvaU1pRnY0Y0FqK0VlUHZTMytlNGJuVERjUjlSSEUyRmZ6VlFl=
+dGtXcWlaVDZwaTdYUT09LS1jaEFBK3lzSXI4bnY5Q0F0LS1sdHBYeEtIR0ROYVJoL0k5NmlHU1F=
+3PT0=3D?cid=3D2215180978" width=3D"0" height=3D"0">=

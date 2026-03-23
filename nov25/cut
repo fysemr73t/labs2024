@@ -1,0 +1,41 @@
+
+
+    def extract(part):
+        print("Found ",part.get_content_type())
+        if part.get_content_type()=="multipart/mixed":
+            for part in part.iter_parts():
+                extract(part)
+                return
+        if part.get_content_type()=="multipart/alternative":
+            for subpart in part.iter_parts():
+                extract(part)
+                return
+        if part.get_content_type() == "text/html":
+            html_content = part.get_payload(decode=True).decode("utf-8", errors="ignore")
+        elif part.get("Content-ID"):
+            cid = part.get("Content-ID").strip("<>")
+            filename = decode_header_value(part.get_filename())
+            if not filename:
+                filename = f"{cid}.bin"
+            filepath = os.path.join(output_dir, filename)
+            with open(filepath, "wb") as f:
+                f.write(part.get_payload(decode=True))
+            if html_content:
+                html_content = html_content.replace(f"cid:{cid}", filename)
+
+    html_content = None
+    if msg.is_multipart():
+        for part in msg.get_payload():
+            print(part.get_content_type())
+            if part.get_content_type() == 'text/plain':
+                print("Plain text part:")
+                print(part.get_payload())
+            elif part.get_content_type() == 'text/html':
+                print("HTML part:")
+                print(part.get_payload())
+    if html_content:
+        print("got html content")
+        html_file = email_file+".html"
+        print(f"HTML email saved to {html_file}")
+    else:
+        print("No HTML content found in the email.")

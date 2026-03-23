@@ -1,0 +1,276 @@
+Received: from SJ2PR07MB9733.namprd07.prod.outlook.com (2603:10b6:a03:4f3::7)
+ by BLAPR07MB7507.namprd07.prod.outlook.com with HTTPS; Fri, 30 Aug 2024
+ 18:53:11 +0000
+Received: from PH8PR21CA0014.namprd21.prod.outlook.com (2603:10b6:510:2ce::28)
+ by SJ2PR07MB9733.namprd07.prod.outlook.com (2603:10b6:a03:4f3::7) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7918.20; Fri, 30 Aug
+ 2024 18:53:09 +0000
+Received: from CH2PEPF0000013D.namprd02.prod.outlook.com
+ (2603:10b6:510:2ce:cafe::80) by PH8PR21CA0014.outlook.office365.com
+ (2603:10b6:510:2ce::28) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7939.8 via Frontend
+ Transport; Fri, 30 Aug 2024 18:53:09 +0000
+Authentication-Results: spf=pass (sender IP is 23.21.109.197)
+ smtp.mailfrom=psm.knowbe4.com; dkim=none (message not signed)
+ header.d=none;dmarc=none action=none
+ header.from=planned-events.com;compauth=fail reason=001
+Received-SPF: Pass (protection.outlook.com: domain of psm.knowbe4.com
+ designates 23.21.109.197 as permitted sender)
+ receiver=protection.outlook.com; client-ip=23.21.109.197;
+ helo=psm.knowbe4.com; pr=C
+Received: from mx0a-00171101.pphosted.com (67.231.148.27) by
+ CH2PEPF0000013D.mail.protection.outlook.com (10.167.244.69) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.7918.13 via Frontend Transport; Fri, 30 Aug 2024 18:53:08 +0000
+Received: from pps.filterd (m0338035.ppops.net [127.0.0.1])
+	by mx0a-00171101.pphosted.com (8.18.1.2/8.18.1.2) with ESMTP id 47UI8T9a013412
+	for <sgarfinkel@fas.harvard.edu>; Fri, 30 Aug 2024 14:53:08 -0400
+Authentication-Results-Original: proofpoint.harvard.edu;	spf=pass
+ smtp.mailfrom=f366bdd6.74c919f6@psm.knowbe4.com
+Received: from psm.knowbe4.com (psm.knowbe4.com [23.21.109.197])
+	by mx0a-00171101.pphosted.com (PPS) with ESMTPS id 419puvrwvd-67
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128 verify=NO)
+	for <sgarfinkel@fas.harvard.edu>; Fri, 30 Aug 2024 14:53:07 -0400 (EDT)
+Message-ID: <f366bdd6.74c919f6@psm.knowbe4.com>
+Date: Fri, 30 Aug 2024 18:53:07 +0000
+From: Eventbrite <support@planned-events.com>
+Reply-To: Eventbrite <support@planned-events.com>
+To: sgarfinkel@fas.harvard.edu
+Subject: Tickets purchasing has been placed on hold
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+X-PHISH-CRID: 2176638710
+X-Proofpoint-GUID: eKVSc946yKr0ORiE8j0wtTtymglaZjQS
+X-CLX-Shades: Deliver
+X-CLX-Response: 1TFkXGxsaHBEKTHoXGhEKWUQXYGQbfBsdBVhEBWARClhYF20aRk0SRl0YcwV 5EQp4ThdtG2lpbhhbQXpZHhEKeEsXbRpGTRJGXRhzBXkRCkNIFwcbGhwRCkNZFwcZEhgRCkNJFx oEGhoaEQpZTRduT0ZDXE9YEQpfWRccExMRCl9NF2dmchEKWUkXGBoacRIdGAYYHncGGx8fBhMeQ
+ hsZBhoGGxoaBhgaGnEeGx8TEBp3BhoGBx8aBhoGGgYaBhpxGhAadwYaEQpZXhdoY3kRCklGF0JL WFxLWE51QkVZXk9OEQpJRxd4T00RCkNOF09hfHlJEx4cU2FYGmV4Q28SQBpdXn5eU0dNRktwQHt 5EQpYXBcfBBoEGR0ZBRsaBBsbGgQbGR4EGR8QGx4aHxoRCl5ZF09oHUdfEQpNXBceHxIRCkxaF2
+ lsbU1dTREKQk8XZUwFaF5LW09LUnMRCkNaFxgZBBgbBBsaEwQbEx0RCkJeFxsRCllFFxwRCkVJF xsRCkVmFxsRCkJFF2JNEnxvXmR6YER5EQpCThdtG2lpbhhbQXpZHhEKQkwXbRpGTRJGXRhzBXkR CkJsF2V9X0N+fWlGQVJCEQpCQBdnEl1hQnhBXX8cGREKQlgXYhgeaXJSfkxiGFMRClpYFx8RCnl
+ DF2wTWGtdYWV5YENDEQpZSxcbHhoYEQpaSxcbHhoYEQpwaBdhRGF4bUgZGHxnbhAaEQpwaBduf0 kZZExSGnlHUBAHGRoRCnBoF2tCexx+Tx9sQHofEAcYBBIRCnBoF2BLSB8TRHB/R09/EAcYHhEKc GgXaGRIeHNPGVoeU20QEwQYEQpwaBdhX0V6Z3JnWxxEaxAHHAQdEQpwaBdmQhtaTmVFYhxtQhAT
+ BB0RCnBoF29Cem5IWmsYYmJhEBoRCnB9F2Fsbnx5aBxjbVpbEBoRCnB9F2NeGwVcWEhNbV0FEBo RCnB9F2tcY3NZS2ZGZk9iEBoRCnB/F2x+fX5PWHx+XxJgEBMcEQpwXxdmcxgTQx5TWGdnaRAbGh oRCnB/F3ofWBkYSUgdTVh5EBMeEQpwXxdlZWZgHG1lZktGZBAaEQpwXxdge2RLbF1/XxNNQBAaE
+ QpwbBdrbExhXXATGU9/HBAdHhEKbX4XGhEKWE0XSxEg
+X-Proofpoint-ORIG-GUID: eKVSc946yKr0ORiE8j0wtTtymglaZjQS
+X-Proofpoint-Virus-Version: vendor=baseguard
+ engine=ICAP:2.0.293,Aquarius:18.0.1039,Hydra:6.0.680,FMLib:17.12.28.16
+ definitions=2024-08-30_10,2024-08-30_01,2024-05-17_01
+X-Proofpoint-Spam-Details: rule=notspam policy=default score=0 clxscore=1106 impostorscore=0
+ adultscore=0 suspectscore=0 phishscore=0 malwarescore=0 mlxscore=6
+ priorityscore=0 lowpriorityscore=0 bulkscore=0 spamscore=6 mlxlogscore=117
+ classifier=clx:Deliver adjust=0 reason=mlx scancount=1
+ engine=8.19.0-2407110000 definitions=main-2408300144 domainage_hfrom=1402
+ domainage_replyto=1402
+Return-Path: f366bdd6.74c919f6@psm.knowbe4.com
+X-MS-Exchange-Organization-ExpirationStartTime: 30 Aug 2024 18:53:08.8293
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 4145d931-639c-4fd6-5015-08dcc924fd78
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 6ffa22f4-4568-4105-ad43-2e3ad4726957:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-Exchange-SkipListedInternetSender:
+ ip=[23.21.109.197];domain=psm.knowbe4.com
+X-MS-Exchange-ExternalOriginalInternetSender:
+ ip=[23.21.109.197];domain=psm.knowbe4.com
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic:
+ CH2PEPF0000013D:EE_|SJ2PR07MB9733:EE_|BLAPR07MB7507:EE_
+X-MS-Exchange-Organization-AuthSource:
+ CH2PEPF0000013D.namprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 4145d931-639c-4fd6-5015-08dcc924fd78
+X-MS-Exchange-AtpMessageProperties: SA
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam:
+ BCL:0;ARA:13230040|82310400026|69100299015|5073199012|4022899009|34002699019|18906007;
+X-Forefront-Antispam-Report:
+ CIP:67.231.148.27;CTRY:US;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:NSPM;H:psm.knowbe4.com;PTR:psm.knowbe4.com;CAT:NONE;SFS:(13230040)(82310400026)(69100299015)(5073199012)(4022899009)(34002699019)(18906007);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 30 Aug 2024 18:53:08.6418
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 4145d931-639c-4fd6-5015-08dcc924fd78
+X-MS-Exchange-CrossTenant-Id: 6ffa22f4-4568-4105-ad43-2e3ad4726957
+X-MS-Exchange-CrossTenant-AuthSource:
+ CH2PEPF0000013D.namprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SJ2PR07MB9733
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.1092247
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.7918.018
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?UUdBT2g2RVNaY0NQemRGbDVZeXFUNG9aWFI2UFE5NC9QenB4SER0SXBMbFhD?=
+ =?utf-8?B?T2cyWHdibFc0NVRkcm1JOFl0WnVVMTZITm5YNjhITDVkUXg5VHhZYmFaVTN3?=
+ =?utf-8?B?a2pkZGdPbllkOUwyekR6eTRZNFZMUWZremVIQktXMUVaM2VOMVhVT1ZWOHJl?=
+ =?utf-8?B?WU9tOHlKR3NYNldFQUM4ejZGbnZEZWxzT09uSk5wRTRxRFpHSk5BZmhNcy9T?=
+ =?utf-8?B?THdhR1ZKcG5Bb1FUVVgwR1NEUWxFMjJuRkFsc1VpVHp2M0p5RWUreUdsZmFl?=
+ =?utf-8?B?eGpYZmN2cDRaRElpTm00TTRhZXZXYUF4MFlaUk1GZXhRcEk5OEtiVHY0L08y?=
+ =?utf-8?B?VlZib3dPckNBTHE3Nzk2L0RXQWlldDIwRFVvZkI0eW8vUTVBZWdMc3pMVDMw?=
+ =?utf-8?B?NUJUd1RqNEFWY3J3NkxWZU1DVEJPUEJnREFsK25BQTJ4OTNvVlhTVUVVWXI4?=
+ =?utf-8?B?cTdIRjk0aTM2SjNkYTBQOFozMjd2dUo0TnAxaUlFV0NsRDRhWUZKaXdGQ1Ba?=
+ =?utf-8?B?amhtL0xhbFdRWmdVVEl3NXRteVBVT1JOMm1zUE5lelNQaHNURVhGeUhSaUVT?=
+ =?utf-8?B?alRjQlM5d0VvMWNEZXBhNVk3RjZOcy9pRElnYkdKVjJaNE1pTGw2Z2pPd1Rn?=
+ =?utf-8?B?NGtWbHhJZjkxYzF2cjBNenhZa09hdEovTlFMd09WN3Jya3UvL3NPM0d6QjA0?=
+ =?utf-8?B?RDVQK0ZSck9LdmsvMmNVNWRLeWhDUi91QnlVQXh4N3M0Y3B6OURLOFNYc2gx?=
+ =?utf-8?B?cXFIcVVQaW1HOGEwL29FY1I2OVdmeUQvb3FsemxPNlVxdjVGWHNyQWVIYjhR?=
+ =?utf-8?B?OVd0VU9QSVBteWRwYXg2bGE3cE1lM3hFNjM3K0RGck1DZmhDemtCT2hwdTRP?=
+ =?utf-8?B?a1FuS0F3QjJhTllScExKYkZyTllBaDcyVTBsVFR3UktkdVlRTUpJWU5QK1pk?=
+ =?utf-8?B?NzNkUWpmaHFWcGJsOE5EQlhlaHpwT3RPbHlyRGxzL08yQ0ludlNkZmhVeTdn?=
+ =?utf-8?B?Slc3aDF3OVNSMFJJTHcwT1BLejJETDZYa29tMkdsb1E0d2x4UWpxZDhNaWRp?=
+ =?utf-8?B?dXBhcHR1R2MxdVo2aFQvTGU2YkhLT1g3dGJOL0JNNTNnVHljYWU5T05aT2ZL?=
+ =?utf-8?B?TlNOdHNreXlKaHFoUzRTdm43TWpiWUZZd09xNlZvbXNDUEptT2x5ZlRMZWNW?=
+ =?utf-8?B?S3NwWERTU1JBSkZWN21aRGtudXhHaDhtNDBRaCs4N0R1Q1A2eW1rYkRrSzRU?=
+ =?utf-8?B?TGFuYmV3Uzkwb1ZlWEpmdnlBazhhZUtUdWdpUko2VEpHSHV4TzNLUTcyTUJ3?=
+ =?utf-8?B?V3BtaFVqUG9WTTNZcTNvKzBnYm9Na1ZUck1DZGxhM3JPM0Y5dk11bDNWMTJQ?=
+ =?utf-8?B?Q0czSXM1MnV2MFNkS2VVV1cwRURsS013TFEzVE1wbGNRVkgxWnBXdERxOE92?=
+ =?utf-8?B?c3E1SWlvMWFIVXlycVVvbXZVNXpMWkFNL0l1c0VSdzQwWGlqZjdIcXFRaE90?=
+ =?utf-8?B?anpuUmpaUkFvWVZVVU0yaTQxems4cDZLbm9hYUZaVGx3NTlnRWlZaHdscXlp?=
+ =?utf-8?B?WE10S2k2WTZpNmJnSUxhYzFsczVyM3VwWmpUQURWb25IaW5OZ1Y2RDdsaFVv?=
+ =?utf-8?B?TkRLMU5lUmEyZkE3K1RYdTNZOWU2bFhLUENjRk9MV2pYdENPd1Z5MytxZU0z?=
+ =?utf-8?B?UFBJY1hXSlppcXFyNXQ1QlBGMDgyeDBFZlNFR0hQMk84Z1A0aHZ6bVltTlFE?=
+ =?utf-8?B?YlZFZW5CMkIwNUdnaUdwQWtkM1paeWlRUjJzRFJySzlUSDY5b0ZDT0ZxcjhO?=
+ =?utf-8?B?YW02VkM2WE0yQ0phaHNYdnhNVysyQmxJdU9MZ2ZKek5BTzZ2VE41bWtxOGpa?=
+ =?utf-8?B?WmdvMUM1SExRRndIa2w2TVNlUUN2L1c0KzFncUEwamlLdk81dU9lbDBYbFBq?=
+ =?utf-8?B?dzlDM2FqNFBWYk9yT1RWZ3llZ2ZhZTZ3dWdUYUJldXlkUFlqblFhSi8rc05H?=
+ =?utf-8?B?NmpMYlYyc0M3MjhvaE5CRDlJcENrcWNOaGxCaG0xUzZLVUwrQzlxaWVMR3gr?=
+ =?utf-8?B?cjJNRC9FcG1lUzRSTmdGSlRialhwNTRXVlUrOUhhUkVDNGF0VUZ6d2hYOWVQ?=
+ =?utf-8?B?V1p6WVR0Q04wckl0QnhwbUxIdnZXSWI1bktGY2I5OG9OZzgyeDFaeFJxUGY0?=
+ =?utf-8?B?QW9ycXRPSExwT2pSOUlsK0djVXdCL3J6bGVhZ0tPenFEK1pJRVlwbSsyTTR5?=
+ =?utf-8?B?WTlrdjlXaFZmMit4NWtuU1pWVXpuMlJtRE1LWFhoUkZJcHBEZUxVSkJqTVhm?=
+ =?utf-8?B?bi9qSVQzQU85VHEwSnI2aHgrR0kyRUZxYzhpKzV2U0VGUGtRNjFmMjBJdm9R?=
+ =?utf-8?B?azhmQVBoeElodit1ZnZiQk1LR3V1bkVKeEovUzloZU50RjBYQWU0Q21aNFhh?=
+ =?utf-8?B?NWpZWGtYSzFIN1AxOFJUZEt2M05CNCtuN3hkM0h1UFhBMk1vWFlpeWh1TTA4?=
+ =?utf-8?B?MmJPSjVjdXlZQlU5V0RST2k2NG9uYldKdTNFOCtXVXZ3WWt0SGpWZy9pUGZv?=
+ =?utf-8?B?UWFLN1pTeGNoUGJWM3dQSGF6WXk0TndHN2FtYXNRN2RsdmQyMEZTRlhXd1Fs?=
+ =?utf-8?B?d2k3akVPMTJqV3ROc3E5dDZlQWYwQzVPc2NIa0VpRm1DUlI4Zkk3eWFVbHNL?=
+ =?utf-8?B?cWJueXJWc3FiclgxcldKMlh5eHh0NVpUZEtwR1Mya3hwQmFiREpvS3hveVZH?=
+ =?utf-8?B?aG4zZ3RYeXVJRDk3bDc1MkhnUStlb2dzRzhwWWNoUTUvV2d0ZkxHTFNMbml0?=
+ =?utf-8?B?MjNYQm5WdTIvMlNlOTExaUR5RjkxVW90eFBuZ1kzVmdtb0Z3eFltZjZ1eHNT?=
+ =?utf-8?B?TDYxTkhmcXpuY0hqRGdNMDY0V0RCNlY4OXZQYTh2cGlIQWxDSXJMbHN2R0Jv?=
+ =?utf-8?B?VUxiNEtUWE5UU1RYTks3aWpxaitnWmE3bnJ0bnNLblZpMERTYlNsZkdBTUZv?=
+ =?utf-8?B?VWMyODFJU3BwS0NwNGV2WERwUWZnOVJNeG14cG9TRHJlZU5XRWt2cVVONmVD?=
+ =?utf-8?B?Z084TjQwdCs0UWZUbjBPZEFzZTJEcXIyVC9Hb0NKZFFySDlCSW16MkRnQVpR?=
+ =?utf-8?B?ZjRxZVMwTjcxOFNyWWdHVFVFM2dWZ3VTdVR1bVIrWUxXZlY2dzdFb1FySThq?=
+ =?utf-8?B?dDJ2UTdoQzJheUFuMWZQcFFCTngzY1JMSTZxcDM0K0tVMS9jVXJmNC9rYWtP?=
+ =?utf-8?B?VlIyY0t5eWFQdmd6VDJQNUxjcnhCQlI1VW1zZkNGemRKcFdGNmtJYkZhVWt4?=
+ =?utf-8?B?cWhsNGZKWFRHVGRpMFBhYlJrYndNL0JHeVlFZHlyWkVzV0lIMmFXVTRXaExw?=
+ =?utf-8?B?Y1R6NEcydEtYN2ZSdG1uSjRPbEJSNEpTeHRaRGx2OTMvVzFlSkNSMnVtYjJP?=
+ =?utf-8?B?OU1EVnlEZ1V0SnZ6OUNidWhjcXdDbjJqdkUrZnFaL3BSSDI3aC9vWXV4SmYw?=
+ =?utf-8?B?VHZNNllHbWMvN3dib0ZKeW9WOHRoYzFGVFZGZkMrV0dyOHBoVXp2NGFIdkZX?=
+ =?utf-8?B?bEZ2bDRrTmRGcVlaVjQ2ZklhY3VnTVB6Y1VVY3UwZTZpc1JUak9TUHR6U0lw?=
+ =?utf-8?B?eGVpYzRTN3pWTnhrUGJoMHp2UnowNFlJV1RDVTQ5bkVIUnJVWlp2aVFUd2J4?=
+ =?utf-8?B?d2pRbGNZdTZhNUloQ1JSaVFKMER6TFNiU3R3UGYwUnlZSjBkTG11cnE2dStO?=
+ =?utf-8?B?TTlJanMwY3R6Q3Q3MEN1ODN1ek9hb0RpY2R2MnRpRTZvMjdUOGJVaFJBcXRV?=
+ =?utf-8?B?UlJsK1pOSURxK0RJMVBFeERjRkFKSDRuSmpJWUNyL25LS0pzblJXdE1FLzU2?=
+ =?utf-8?B?Nm1uM2RVT0VJZ09zbDVjMXVYS0EwWUIyNkZBOXBwa0NzZVBhdDZueXYyYlU1?=
+ =?utf-8?B?R3ZqMTUwdFFzMTZwT1FsKzEwS3UvSloxck9JN2wzamRHNmp0UVNOQms5Rnho?=
+ =?utf-8?B?QWMwTTdnMmZjOTRJVEFRK2pDSFh4d1FzQVNGQ1p2M1ZwS0FKUVluSkF1WVlD?=
+ =?utf-8?B?MmxTT1RWSGVvbFM3THk5Q2ZPVHh3dEVXL2M2WDFNV0tlNW5pNzVZa2RRaTU0?=
+ =?utf-8?B?T09OMlFtVjNnR2lVU3AwTElvSWNSV2FGZkFPVWNzWG8rakRBZFUyK3hLZGdF?=
+ =?utf-8?B?NlJqU3pPaTdsOXIyY2Ntb3VFUXBTZ0JGM1VOa201bTV2ckh5STY2ZlRqaXJO?=
+ =?utf-8?B?TVd3OU1pa1ZMeUlQdkdnOWFnWW5Vb0RnQm5xRGVEeFYvMkdOTWZTSi9WN2JW?=
+ =?utf-8?B?ODNvcENXTG5jMVkwaEJsUDg5U1pYUUtlenltbTh3VHR3VlFqYnQ1RkVGeW0x?=
+ =?utf-8?B?K2M2NnpzUnVSWEN6TGo1emV2cGNMQlBhWitFaU41aXgzNFFNaDV2RUoyTm1R?=
+ =?utf-8?B?dVRiTDg2UHJ0YitjNnZxbXdOSjUvUW5kZXlIN2JIS3RxTEllTm9IYTJ5ZXNQ?=
+ =?utf-8?Q?Kdf7qTaZQZWXeI905tzycc=3D?=
+MIME-Version: 1.0
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><style type="text/css">body {
+		background-color: #ffffff !important;
+	}
+	body,
+	table,
+	td,
+	p,
+	a {
+		font-family: Arial, Helvetica, sans-serif !important;
+	}
+	table {
+		border-spacing: 0 !important;
+		border-collapse: collapse !important;
+	}
+</style>
+
+<div style="background-color:#ffffff; color:#000000; font-family:Arial,Helvetica,sans-serif; font-size:16px; margin-bottom:0; margin-left:auto; margin-right:auto; margin-top:0; table-layout:fixed; width:100%">
+<div style="background-color:#ffffff; color:#000000; font-family:Arial,Helvetica,sans-serif; font-size:16px; margin-bottom:0; margin-left:auto; margin-right:auto; margin-top:0; max-width:600px">
+
+<table align="center" cellspacing="0" role="presentation" style="background-color:#ffffff; border-collapse:collapse; border-spacing:0; color:#000000; font-family:Arial,Helvetica,sans-serif; font-size:16px; margin:0 auto; max-width:600px; padding:0; width:100%">
+	<tbody>
+		<tr>
+			<td style="padding:0">
+			<table role="presentation" style="border-spacing:0; width:100%">
+				<tbody>
+					<tr>
+						<td style="padding:15px 30px; text-align:center; width:600px"><img alt="Eventbrite" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Eventbrite_Logo.svg/200px-Eventbrite_Logo.svg.png" style="border:0; width:120px" width="120"></td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td style="padding:30px">
+			<table role="presentation" style="border-spacing:0; width:100%">
+				<tbody>
+					<tr>
+						<td style="color:#6c6c6c; font-size:16px; padding:0; text-align:left; width:100%">
+						<p style="color:#6c6c6c; font-size:16px; line-height:23px; margin-bottom:0; margin-left:0; margin-right:0; margin-top:0; padding-bottom:18px; text-align:left">Hello,</p>
+
+						<p style="color:#6c6c6c; font-size:16px; line-height:23px; margin-bottom:0; margin-left:0; margin-right:0; margin-top:0; padding-bottom:18px; text-align:left">We regret to inform you that we are currently unable to authorize ticket purchases for your upcoming events due to missing or incorrect account information.</p>
+
+						<p style="color:#6c6c6c; font-size:16px; line-height:23px; margin-bottom:0; margin-left:0; margin-right:0; margin-top:0; padding-bottom:18px; text-align:left">To ensure the continued processing of ticket purchases, please log in to your Eventbrite account and update your payment details, including your account number, through our secure system.</p>
+
+						<p style="color:#6c6c6c; font-size:16px; line-height:23px; margin-bottom:0; margin-left:0; margin-right:0; margin-top:0; padding-bottom:18px; text-align:left">Your prompt attention to this matter is greatly appreciated.</p>
+
+						<p style="color:#6c6c6c; font-size:16px; line-height:23px; margin-bottom:0; margin-left:0; margin-right:0; margin-top:0; padding-bottom:18px; text-align:left">Best regards,</p>
+
+						<p style="color:#6c6c6c; font-size:16px; line-height:23px; margin-bottom:0; margin-left:0; margin-right:0; margin-top:0; padding-bottom:18px; text-align:left">Eventbrite Support</p>
+
+						<hr style="
+												border: none;
+												height: 1px;
+												background-color: #6c6c6c;
+											">
+</td>
+					</tr>
+					<tr>
+						<td align="center" style="padding:18px 30px">
+						<table align="center" role="presentation" style="border-spacing:0">
+							<tbody>
+								<tr>
+									<td align="center" bgcolor="#252224" style="background-color:#252224; border-radius:4px; padding:12px 24px">
+ <a class="plink" href="https://crypt.single-sign-on.password.land/XUlBDczRyUmZsQkFaME9yNStRVGFaa2Noa2FVM2lHaHplVnQ4akpmTDd6bmF1YnkwdHQ5cUIxeUZmUE11a2JYazFwMjhXOUV1d3c0clpPMG9QbzNYLzYyM1orQW9kSHNiM3VSRTd4anptTHBldTZaTU5LRlYxT3IyQ1gweENQdEpKOHUvNUxScktXWVRmM2piNWxiQm4ySnpnenBOeXNYUFFZWFRQOWhUT3o1RVZ5Uy96QS9nQ1pDdnV0cTUyN3RpZU5YUUZmN0E3cmczRUhFOTVLMVMtLUdLektRbzgyY2syRDhiNHEtLVBtZ3p1RTBQc2Nnd01xNUFYZ21KOHc9PQ==?cid=2176638710" target="_blank" style="
+																	font-size: 16px;
+																	font-weight: bold;
+																	text-decoration: none;
+																	color: #ffffff;
+																	border-radius: 4px;
+																	display: inline-block;
+																	letter-spacing: 1px;
+																	
+																"> UPDATE YOUR INFORMATION </a> 
+</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+					<tr>
+						<td style="padding:30px">
+						<p style="color:#696969; font-size:12px; line-height:23px; margin-bottom:0; margin-left:0; margin-right:0; margin-top:0; text-align:center">To make sure you keep getting these emails, please add us to your address book.</p>
+
+						<p style="color:#696969; font-size:12px; line-height:23px; margin-bottom:0; margin-left:0; margin-right:0; margin-top:0; text-align:center">Want out of the loop? <a class="plink" href="https://crypt.single-sign-on.password.land/XUlBDczRyUmZsQkFaME9yNStRVGFaa2Noa2FVM2lHaHplVnQ4akpmTDd6bmF1YnkwdHQ5cUIxeUZmUE11a2JYazFwMjhXOUV1d3c0clpPMG9QbzNYLzYyM1orQW9kSHNiM3VSRTd4anptTHBldTZaTU5LRlYxT3IyQ1gweENQdEpKOHUvNUxScktXWVRmM2piNWxiQm4ySnpnenBOeXNYUFFZWFRQOWhUT3o1RVZ5Uy96QS9nQ1pDdnV0cTUyN3RpZU5YUUZmN0E3cmczRUhFOTVLMVMtLUdLektRbzgyY2syRDhiNHEtLVBtZ3p1RTBQc2Nnd01xNUFYZ21KOHc9PQ==?cid=2176638710" target="_blank" style="text-decoration: underline; color: #3333ff">Unsubscribe</a></p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+</div>
+</div>
+<img src="https://crypt.single-sign-on.password.land/XY1pJeWh3aUFVQ05DdlZMQ0dicnp3emx6T1JleXhoZUwwVnpYR2NUYXpnNFRoV1VFa2U1bThpYW5PV0xnYU5kMlF1TlBETS9OOERpcnhjV0QwNE9vcFFmdS93a0ZGRW1YUFVwSFhKREwzL3NDT0d3NWcza3ZOUT09LS05bzB5RkQ3QktDQ0NjQVhNLS1VdmxjYUQ3d1BYdzZGeGlzOFFudUNnPT0=?cid=2176638710" width="0" height="0">
